@@ -4,11 +4,7 @@ class Animal
 {
 public:
 	Animal() {}
-	virtual void voice()
-	{
-		std::cout << "text" << std::endl;
-	}
-
+	virtual void voice() {}
 };
 
 class Dog : public Animal
@@ -51,8 +47,7 @@ int main()
 
 	for (int i = 0; i < 3; i++)
 	{
-		Animal* tmp = array[i];
-		tmp->voice();
+		array[i]->voice();
 	}
 
 
