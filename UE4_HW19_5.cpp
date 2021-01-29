@@ -51,7 +51,8 @@ int main()
 
 	for (int i = 0; i < 3; i++)
 	{
-		std::cout << array[0] + i << std::endl;
+		Animal* tmp = array[i];
+		tmp->voice();
 	}
 
 
